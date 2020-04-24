@@ -5,6 +5,7 @@
             {
                 "debug":true,
                 "useBuiltIns":false,
+                "corejs":3,
                 "targets":[
                     "> 1%",
                     "last 2 versions",
@@ -19,7 +20,7 @@
         //     {
         //         "corejs":3
         //     }
-        // ],
+        // ]
         // ["@babel/plugin-transform-react-jsx"]
     ]
 }
