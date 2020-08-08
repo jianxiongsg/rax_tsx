@@ -86,14 +86,25 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Demo/index.less":
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Demo/index.less ***!
-  \*********************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Bubble/index.less":
+/*!***********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Bubble/index.less ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".demo {\\n  position: absolute;\\n  top: 50%;\\n  left: 50%;\\n  width: 50vw;\\n  height: 50vw;\\n  margin-left: -25vw;\\n  margin-top: -25vw;\\n  background-color: red;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/components/Demo/index.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".bubble-box {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  width: auto;\\n  height: auto;\\n  background: rgba(0, 0, 0, 0.5);\\n  font-size: 3.46666667vw;\\n  line-height: 3.46666667vw;\\n  padding: 1.33333333vw 2.66666667vw;\\n  border-radius: 3.2vw;\\n  white-space: nowrap;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/components/Bubble/index.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/BubbleMgr/index.less":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/BubbleMgr/index.less ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".bubblemgr-box {\\n  position: absolute;\\n  top: 50%;\\n  left: 30vw;\\n  height: auto;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/components/BubbleMgr/index.less?./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -696,26 +707,61 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./src/components/Demo/index.less":
-/*!****************************************!*\
-  !*** ./src/components/Demo/index.less ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./index.less */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Demo/index.less\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/components/Demo/index.less?");
-
-/***/ }),
-
-/***/ "./src/components/Demo/index.tsx":
-/*!***************************************!*\
-  !*** ./src/components/Demo/index.tsx ***!
-  \***************************************/
+/***/ "./src/Util/helper.ts":
+/*!****************************!*\
+  !*** ./src/Util/helper.ts ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar __extends = this && this.__extends || function () {\n  var _extendStatics = function extendStatics(d, b) {\n    _extendStatics = Object.setPrototypeOf || {\n      __proto__: []\n    } instanceof Array && function (d, b) {\n      d.__proto__ = b;\n    } || function (d, b) {\n      for (var p in b) {\n        if (b.hasOwnProperty(p)) d[p] = b[p];\n      }\n    };\n\n    return _extendStatics(d, b);\n  };\n\n  return function (d, b) {\n    _extendStatics(d, b);\n\n    function __() {\n      this.constructor = d;\n    }\n\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n  };\n}();\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n/** @jsx createElement */\n\nvar rax_1 = __webpack_require__(/*! rax */ \"./node_modules/rax/index.js\");\n\n__webpack_require__(/*! ./index.less */ \"./src/components/Demo/index.less\");\n\nvar Demo =\n/** @class */\nfunction (_super) {\n  __extends(Demo, _super);\n\n  function Demo(props) {\n    var _this = _super.call(this, props) || this;\n\n    [\"111\", \"222\"].map(function (v) {\n      console.log(v);\n    });\n    return _this;\n  }\n\n  Demo.prototype.render = function () {\n    return rax_1.createElement(\"div\", {\n      className: \"demo\"\n    }, \"1111111111111\");\n  };\n\n  return Demo;\n}(rax_1.Component);\n\nexports.default = Demo;\n\n//# sourceURL=webpack:///./src/components/Demo/index.tsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar ticks = [];\nvar isTick = false;\n\nfunction bubbletick() {\n  if (ticks.length === 0) {\n    isTick = false;\n    return;\n  }\n\n  isTick = true;\n  requestAnimationFrame(function (curTime) {\n    var removelist = [];\n    ticks.forEach(function (t) {\n      if (t.startTime === undefined) {\n        t.startTime = curTime;\n      }\n\n      var dist = curTime - t.startTime;\n\n      if (t.time - dist < 0) {\n        t.func();\n        removelist.push(t);\n      }\n    });\n    removelist.forEach(function (o) {\n      var idx = ticks.indexOf(o);\n\n      if (idx !== -1) {\n        ticks.splice(idx, 1);\n      }\n    });\n    bubbletick();\n  });\n}\n\nfunction delay(time, func) {\n  ticks.push({\n    time: time,\n    func: func,\n    startTime: undefined\n  });\n\n  if (!isTick) {\n    bubbletick();\n  }\n}\n\nexports.delay = delay;\n\nfunction convertValue(v) {\n  return v / 7.5 + \"vw\";\n}\n\nexports.convertValue = convertValue;\n\n//# sourceURL=webpack:///./src/Util/helper.ts?");
+
+/***/ }),
+
+/***/ "./src/components/Bubble/index.less":
+/*!******************************************!*\
+  !*** ./src/components/Bubble/index.less ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./index.less */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Bubble/index.less\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/components/Bubble/index.less?");
+
+/***/ }),
+
+/***/ "./src/components/Bubble/index.tsx":
+/*!*****************************************!*\
+  !*** ./src/components/Bubble/index.tsx ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar __extends = this && this.__extends || function () {\n  var _extendStatics = function extendStatics(d, b) {\n    _extendStatics = Object.setPrototypeOf || {\n      __proto__: []\n    } instanceof Array && function (d, b) {\n      d.__proto__ = b;\n    } || function (d, b) {\n      for (var p in b) {\n        if (b.hasOwnProperty(p)) d[p] = b[p];\n      }\n    };\n\n    return _extendStatics(d, b);\n  };\n\n  return function (d, b) {\n    _extendStatics(d, b);\n\n    function __() {\n      this.constructor = d;\n    }\n\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n  };\n}();\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n/** @jsx createElement */\n\nvar rax_1 = __webpack_require__(/*! rax */ \"./node_modules/rax/index.js\");\n\n__webpack_require__(/*! ./index.less */ \"./src/components/Bubble/index.less\");\n\nvar helper_1 = __webpack_require__(/*! ../../Util/helper */ \"./src/Util/helper.ts\");\n\nvar BubbleMgr_1 = __importDefault(__webpack_require__(/*! ../BubbleMgr */ \"./src/components/BubbleMgr/index.tsx\"));\n\nvar StateType;\n\n(function (StateType) {\n  StateType[StateType[\"Wait\"] = 0] = \"Wait\";\n  StateType[StateType[\"Move1\"] = 1] = \"Move1\";\n  StateType[StateType[\"Stop1\"] = 2] = \"Stop1\";\n  StateType[StateType[\"Move2\"] = 3] = \"Move2\";\n  StateType[StateType[\"Stop2\"] = 4] = \"Stop2\";\n  StateType[StateType[\"FadeOut\"] = 5] = \"FadeOut\";\n})(StateType || (StateType = {}));\n\nvar Bubble =\n/** @class */\nfunction (_super) {\n  __extends(Bubble, _super);\n\n  function Bubble(props) {\n    var _this = _super.call(this, props) || this;\n\n    _this.stopTime = 3000;\n    _this.moveTime = 1000;\n    _this.moveConfig = {};\n    _this.moveConfig[StateType.Wait] = {\n      y: 0\n    };\n    _this.moveConfig[StateType.Move1] = {\n      y: -100\n    };\n    _this.moveConfig[StateType.Stop1] = {\n      y: -100\n    };\n    _this.moveConfig[StateType.Move2] = {\n      y: -200\n    };\n    _this.moveConfig[StateType.Stop2] = {\n      y: -200\n    };\n    _this.moveConfig[StateType.FadeOut] = {\n      y: -300\n    };\n    _this.state = {\n      data: null\n    };\n    return _this;\n  }\n\n  Bubble.prototype.show = function (msg) {\n    var _this = this;\n\n    this.setState({\n      data: msg\n    }, function () {\n      _this.updateStateType(StateType.Move1);\n    });\n  };\n\n  Bubble.prototype.updateStateType = function (type) {\n    var _this = this;\n\n    switch (type) {\n      case StateType.Move1:\n        this.moveTo(this.moveConfig[StateType.Wait].y, this.moveConfig[StateType.Move1].y, function () {\n          _this.updateStateType(StateType.Stop1);\n        });\n        break;\n\n      case StateType.Stop1:\n        helper_1.delay(this.stopTime, function () {\n          BubbleMgr_1.default.showNext();\n\n          _this.updateStateType(StateType.Move2);\n        });\n        break;\n\n      case StateType.Move2:\n        this.moveTo(this.moveConfig[StateType.Stop1].y, this.moveConfig[StateType.Move2].y, function () {\n          _this.updateStateType(StateType.Stop2);\n        });\n        break;\n\n      case StateType.FadeOut:\n        this.moveTo(this.moveConfig[StateType.Stop2].y, this.moveConfig[StateType.FadeOut].y, function () {\n          console.log(\"end\");\n        });\n        break;\n    }\n  };\n\n  Bubble.prototype.moveTo = function (srcY, toY, cb) {\n    var startMoveTime;\n    var moveTime = this.moveTime;\n    var eleBox = this.eleBox;\n\n    var move = function move() {\n      requestAnimationFrame(function (time) {\n        if (!startMoveTime) {\n          startMoveTime = time;\n        }\n\n        var progress = Math.min((time - startMoveTime) / moveTime, 1);\n        var dist = progress * (toY - srcY);\n        var nextPosY = helper_1.convertValue(srcY + dist);\n        eleBox.style.transform = \"translateY(\" + nextPosY + \")\";\n\n        if (progress === 1) {\n          cb();\n          return;\n        }\n\n        move();\n      });\n    };\n  };\n\n  Bubble.prototype.componentDidMount = function () {};\n\n  Bubble.prototype.render = function () {\n    var _this = this;\n\n    return rax_1.createElement(\"div\", {\n      ref: function ref(_ref) {\n        return _this.eleBox = _ref;\n      },\n      className: \"bubble-box\"\n    }, this.state.data ? rax_1.createElement(\"span\", null, this.state.data.desc) : null);\n  };\n\n  return Bubble;\n}(rax_1.Component);\n\nexports.default = Bubble;\n\n//# sourceURL=webpack:///./src/components/Bubble/index.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/BubbleMgr/index.less":
+/*!*********************************************!*\
+  !*** ./src/components/BubbleMgr/index.less ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./index.less */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/BubbleMgr/index.less\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/components/BubbleMgr/index.less?");
+
+/***/ }),
+
+/***/ "./src/components/BubbleMgr/index.tsx":
+/*!********************************************!*\
+  !*** ./src/components/BubbleMgr/index.tsx ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar __extends = this && this.__extends || function () {\n  var _extendStatics = function extendStatics(d, b) {\n    _extendStatics = Object.setPrototypeOf || {\n      __proto__: []\n    } instanceof Array && function (d, b) {\n      d.__proto__ = b;\n    } || function (d, b) {\n      for (var p in b) {\n        if (b.hasOwnProperty(p)) d[p] = b[p];\n      }\n    };\n\n    return _extendStatics(d, b);\n  };\n\n  return function (d, b) {\n    _extendStatics(d, b);\n\n    function __() {\n      this.constructor = d;\n    }\n\n    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n  };\n}();\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n/** @jsx createElement */\n\nvar rax_1 = __webpack_require__(/*! rax */ \"./node_modules/rax/index.js\");\n\n__webpack_require__(/*! ./index.less */ \"./src/components/BubbleMgr/index.less\");\n\nvar Bubble_1 = __importDefault(__webpack_require__(/*! ../Bubble */ \"./src/components/Bubble/index.tsx\"));\n\nvar BubbleMgr =\n/** @class */\nfunction (_super) {\n  __extends(BubbleMgr, _super);\n\n  function BubbleMgr(props) {\n    var _this = _super.call(this, props) || this;\n\n    _this.bubbleIndex = -1;\n    BubbleMgr.inst = _this;\n    _this.items = [];\n    _this.msgList = [{\n      desc: \"我是测试数据1\"\n    }, {\n      desc: \"我是测试数据2\"\n    }, {\n      desc: \"我是测试数据3\"\n    }, {\n      desc: \"我是测试数据4\"\n    }, {\n      desc: \"我是测试数据5\"\n    }];\n    return _this;\n  }\n\n  BubbleMgr.put = function (item) {\n    BubbleMgr.inst.items.push(item);\n  };\n\n  BubbleMgr.prototype.get = function () {\n    if (this.items.length = 0) {\n      return null;\n    }\n\n    return this.items.shift();\n  };\n\n  BubbleMgr.showNext = function () {\n    var item = BubbleMgr.inst.get();\n    BubbleMgr.inst.bubbleIndex++;\n\n    if (BubbleMgr.inst.bubbleIndex > BubbleMgr.inst.msgList.length) {\n      BubbleMgr.inst.bubbleIndex = 0;\n    }\n\n    if (item) {\n      item.show(BubbleMgr.inst.msgList[BubbleMgr.inst.bubbleIndex]);\n    }\n  };\n\n  BubbleMgr.prototype.componentDidMount = function () {};\n\n  BubbleMgr.prototype.render = function () {\n    var list = new Array(5);\n    console.log(\"list\", list);\n    return rax_1.createElement(\"div\", {\n      className: \"bubblemgr-box\"\n    }, list.map(function (msg, index) {\n      return rax_1.createElement(Bubble_1.default, {\n        key: index\n      });\n    }));\n  };\n\n  return BubbleMgr;\n}(rax_1.Component);\n\nexports.default = BubbleMgr;\n\n//# sourceURL=webpack:///./src/components/BubbleMgr/index.tsx?");
 
 /***/ }),
 
@@ -727,7 +773,7 @@ eval("\n\nvar __extends = this && this.__extends || function () {\n  var _extend
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\n\nvar __importStar = this && this.__importStar || function (mod) {\n  if (mod && mod.__esModule) return mod;\n  var result = {};\n  if (mod != null) for (var k in mod) {\n    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];\n  }\n  result[\"default\"] = mod;\n  return result;\n};\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n/** @jsx createElement */\n\nvar rax_1 = __webpack_require__(/*! rax */ \"./node_modules/rax/index.js\");\n\nvar Demo_1 = __importDefault(__webpack_require__(/*! ./components/Demo */ \"./src/components/Demo/index.tsx\"));\n\nvar DriverDOM = __importStar(__webpack_require__(/*! driver-dom */ \"./node_modules/driver-dom/es/index.js\"));\n\nfunction start(ele) {\n  rax_1.render(rax_1.createElement(Demo_1.default, {\n    data: \"111\"\n  }), ele, {\n    driver: DriverDOM\n  });\n}\n\nexports.start = start;\nstart(document.body);\n\n//# sourceURL=webpack:///./src/index.tsx?");
+eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\n\nvar __importStar = this && this.__importStar || function (mod) {\n  if (mod && mod.__esModule) return mod;\n  var result = {};\n  if (mod != null) for (var k in mod) {\n    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];\n  }\n  result[\"default\"] = mod;\n  return result;\n};\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n/** @jsx createElement */\n\nvar rax_1 = __webpack_require__(/*! rax */ \"./node_modules/rax/index.js\");\n\nvar BubbleMgr_1 = __importDefault(__webpack_require__(/*! ./components/BubbleMgr */ \"./src/components/BubbleMgr/index.tsx\"));\n\nvar DriverDOM = __importStar(__webpack_require__(/*! driver-dom */ \"./node_modules/driver-dom/es/index.js\"));\n\nfunction start(ele) {\n  rax_1.render(rax_1.createElement(BubbleMgr_1.default, null), ele, {\n    driver: DriverDOM\n  });\n}\n\nexports.start = start;\nstart(document.body);\n\n//# sourceURL=webpack:///./src/index.tsx?");
 
 /***/ })
 

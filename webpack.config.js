@@ -8,6 +8,18 @@ module.exports = {
         filename:"game.js",
         path:path.join(__dirname,"dist")
     },
+    devServer:{
+        headers:{
+            "Access-Control-Allow-Origin":"*",
+            "Access-Control-Allow-Credentials":"true"
+        },
+        contentBase:path.join(__dirname,"./dist"),
+        host:"0.0.0.0",
+        port:8888,
+        hot:true,
+        clientLogLevel:"none",
+        disableHostCheck:true
+    },
     module:{
         rules:[
             {
